@@ -1,0 +1,8 @@
+/home/roger/dotzsystems/bonification-erp/BonificationErp.Application/bin/Debug/netcoreapp3.1/BonificationErp.Application.deps.json
+/home/roger/dotzsystems/bonification-erp/BonificationErp.Application/bin/Debug/netcoreapp3.1/BonificationErp.Application.dll
+/home/roger/dotzsystems/bonification-erp/BonificationErp.Application/bin/Debug/netcoreapp3.1/BonificationErp.Application.pdb
+/home/roger/dotzsystems/bonification-erp/BonificationErp.Application/obj/Debug/netcoreapp3.1/BonificationErp.Application.csprojAssemblyReference.cache
+/home/roger/dotzsystems/bonification-erp/BonificationErp.Application/obj/Debug/netcoreapp3.1/BonificationErp.Application.AssemblyInfoInputs.cache
+/home/roger/dotzsystems/bonification-erp/BonificationErp.Application/obj/Debug/netcoreapp3.1/BonificationErp.Application.AssemblyInfo.cs
+/home/roger/dotzsystems/bonification-erp/BonificationErp.Application/obj/Debug/netcoreapp3.1/BonificationErp.Application.dll
+/home/roger/dotzsystems/bonification-erp/BonificationErp.Application/obj/Debug/netcoreapp3.1/BonificationErp.Application.pdb

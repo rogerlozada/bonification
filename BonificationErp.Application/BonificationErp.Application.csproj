@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  <ProjectGuid>{154b88aa-7164-4dbc-b85b-a9eca87bc883}</ProjectGuid><Version>1.0</Version></PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dharma.Common" Version="3.21.12" />
+  </ItemGroup>
+
+</Project>
