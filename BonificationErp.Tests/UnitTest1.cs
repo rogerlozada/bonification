@@ -10,7 +10,7 @@ namespace BonificationErp.Tests
         {
             int value = 1;
             int value2 = 1;
-            Assert.IsTrue(value == value2);
+            Assert.IsTrue(value != value2);
         }
     }
 }
