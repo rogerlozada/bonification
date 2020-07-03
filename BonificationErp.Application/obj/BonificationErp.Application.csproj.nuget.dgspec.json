@@ -1,23 +1,22 @@
 {
   "format": 1,
   "restore": {
-    "/home/roger/dotzsystems/bonification-erp/BonificationErp.Application/BonificationErp.Application.csproj": {}
+    "/home/roger/courses/jenkins/projeto/bonification/BonificationErp.Application/BonificationErp.Application.csproj": {}
   },
   "projects": {
-    "/home/roger/dotzsystems/bonification-erp/BonificationErp.Application/BonificationErp.Application.csproj": {
+    "/home/roger/courses/jenkins/projeto/bonification/BonificationErp.Application/BonificationErp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/roger/dotzsystems/bonification-erp/BonificationErp.Application/BonificationErp.Application.csproj",
+        "projectUniqueName": "/home/roger/courses/jenkins/projeto/bonification/BonificationErp.Application/BonificationErp.Application.csproj",
         "projectName": "BonificationErp.Application",
-        "projectPath": "/home/roger/dotzsystems/bonification-erp/BonificationErp.Application/BonificationErp.Application.csproj",
+        "projectPath": "/home/roger/courses/jenkins/projeto/bonification/BonificationErp.Application/BonificationErp.Application.csproj",
         "packagesPath": "/home/roger/.nuget/packages/",
-        "outputPath": "/home/roger/dotzsystems/bonification-erp/BonificationErp.Application/obj/",
+        "outputPath": "/home/roger/courses/jenkins/projeto/bonification/BonificationErp.Application/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/roger/dotzsystems/bonification-erp/nuget.config",
           "/home/roger/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +24,6 @@
         ],
         "sources": {
           "http://nexus.dotznext.com/repository/nuget": {},
-          "http://nexus.dotznext.com/repository/nuget/": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,12 +39,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "Dharma.Common": {
-              "target": "Package",
-              "version": "[3.21.12, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
