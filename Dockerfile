@@ -10,7 +10,11 @@ RUN dotnet build
 
 WORKDIR BonificationErp.Tests
 
-RUN dotnet test --logger "trx;LogFileName=report.trx" || true
+RUN dotnet test --logger "trx;LogFileName=report-2019.trx" || true
+
+WORKDIR TestResults
+
+RUN cp $( (ls -t ./report*.trx) | cut -d'/' -f 2) report.trx || true
 
 RUN ls
 
