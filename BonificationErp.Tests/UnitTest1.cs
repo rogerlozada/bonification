@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using  BonificationErp.Application;
 
 namespace BonificationErp.Tests
 {
@@ -8,9 +9,7 @@ namespace BonificationErp.Tests
         [TestMethod]
         public void TestMethod1()
         {
-            int value = 1;
-            int value2 = 1;
-            Assert.IsTrue(value != value2);
+            Assert.IsTrue(Operacoes.somar(2,2) == 4);
         }
     }
 }
