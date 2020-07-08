@@ -115,10 +115,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.9.0, )"
-            },
-            "dotnet-reportgenerator-cli": {
-              "target": "Package",
-              "version": "[4.6.1, )"
             }
           },
           "imports": [

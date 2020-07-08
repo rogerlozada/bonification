@@ -10,7 +10,9 @@ RUN dotnet build
 
 WORKDIR BonificationErp.Tests
 
-RUN dotnet test --logger "trx;LogFileName=report.trx" || true
+#RUN dotnet test --logger "trx;LogFileName=report.trx" || true
+
+RUN dotnet test --logger 'trx;LogFileName=report.trx' --logger --results-directory ./TestResult /p:CollectCoverage=true /p:CoverletOutput=TestResult/ /p:CoverletOutputFormat=cobertura || true
 
 WORKDIR TestResults
 
