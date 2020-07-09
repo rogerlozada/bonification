@@ -9,7 +9,7 @@ namespace BonificationErp.Tests
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.IsTrue(Operacoes.somar(2,2) == 4);
+            Assert.IsTrue(Operacoes.somar(2,2) == 5);
         }
     }
 }
