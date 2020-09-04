@@ -24,7 +24,7 @@ WORKDIR BonificationErp.Tests
 
 RUN dotnet add package coverlet.msbuild
 
-RUN dotnet test --logger 'trx;LogFileName=report.trx' --logger --results-directory ./TestResults /p:CollectCoverage=true /p:CoverletOutput="TestResults/coverage.xml" /p:CoverletOutputFormat="opencover" || true
+RUN dotnet test --logger 'trx;LogFileName=report.trx' --logger --results-directory ./TestResults /p:CollectCoverage=true /p:CoverletOutput="TestResults/report.coveragexml" /p:CoverletOutputFormat="opencover" || true
 
 WORKDIR TestResults
 
@@ -34,4 +34,4 @@ RUN ls
 
 FROM scratch AS export-stage
 COPY --from=builder /app/BonificationErp.Tests/TestResults/report.trx .
-COPY --from=builder /app/BonificationErp.Tests/TestResults/coverage.xml .
+COPY --from=builder /app/BonificationErp.Tests/TestResults/report.coveragexml .
