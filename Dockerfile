@@ -9,7 +9,8 @@ ENV PATH="$PATH:/root/.dotnet/tools"
 
 RUN dotnet tool install --global dotnet-sonarscanner &&\ 
     dotnet tool install --global coverlet.console &&\ 
-    dotnet tool install --global dotnet-outdated
+    dotnet tool install --global dotnet-outdated &&\
+    dotnet tool install -g dotnet-reportgenerator-globaltool
 
 
 WORKDIR /app
@@ -24,9 +25,11 @@ WORKDIR BonificationErp.Tests
 
 RUN dotnet add package coverlet.msbuild
 
-RUN dotnet test --logger 'trx;LogFileName=report.trx' --logger --results-directory ./TestResults /p:CollectCoverage=true /p:CoverletOutput="TestResults/report.coveragexml" /p:CoverletOutputFormat=cobertura || true
+RUN dotnet test --logger 'trx;LogFileName=report.trx' --logger --results-directory ./TestResults /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=cobertura || true
 
 WORKDIR TestResults
+
+RUN reportgenerator "-reports:/app/BonificationErp.Tests/TestResults/coverage.cobertura.xml" "-targetdir:coveragereport" -reporttypes:Html
 
 RUN cp $( (ls -t ./report*.trx) | cut -d'/' -f 2) report.trx || true
 
