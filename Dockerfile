@@ -1,5 +1,17 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-bionic as builder
 
+USER root
+
+RUN apt-get update -yqq > /dev/null && \
+    apt-get install -yqq default-jre > /dev/null
+
+ENV PATH="$PATH:/root/.dotnet/tools" 
+
+RUN dotnet tool install --global dotnet-sonarscanner &&\ 
+    dotnet tool install --global coverlet.console &&\ 
+    dotnet tool install --global dotnet-outdated
+
+
 WORKDIR /app
 
 COPY . ./
@@ -10,10 +22,9 @@ RUN dotnet build
 
 WORKDIR BonificationErp.Tests
 
-#RUN dotnet test --logger "trx;LogFileName=report.trx" || true
-RUN dotnet add package coverlet.msbuild --version 2.9.0
+RUN dotnet add package coverlet.msbuild
 
-RUN dotnet test --logger 'trx;LogFileName=report.trx' --logger --results-directory ./TestResults /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=cobertura || true
+RUN dotnet test --logger 'trx;LogFileName=report.trx' --logger --results-directory ./TestResults /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat="coverage.xml" || true
 
 WORKDIR TestResults
 
