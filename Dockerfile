@@ -34,3 +34,4 @@ RUN ls
 
 FROM scratch AS export-stage
 COPY --from=builder /app/BonificationErp.Tests/TestResults/report.trx .
+COPY --from=builder /app/BonificationErp.Tests/TestResults/coverage.xml .
