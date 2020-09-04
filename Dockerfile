@@ -24,7 +24,7 @@ WORKDIR BonificationErp.Tests
 
 RUN dotnet add package coverlet.msbuild
 
-RUN dotnet test --logger 'trx;LogFileName=report.trx' --logger --results-directory ./TestResults /p:CollectCoverage=true /p:CoverletOutput="TestResults/report.coveragexml" /p:CoverletOutputFormat="opencover" || true
+RUN dotnet test --logger 'trx;LogFileName=report.trx' --logger --results-directory ./TestResults /p:CollectCoverage=true /p:CoverletOutput="TestResults/report.coveragexml" /p:CoverletOutputFormat=cobertura || true
 
 WORKDIR TestResults
 
