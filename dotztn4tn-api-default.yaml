@@ -10,19 +10,7 @@ metadata:
     - url: https://dotzmkt.visualstudio.com/Dotz/_git/dotz-tn4tn
       title: Azure Git Repo
       icon: github
-    - url: https://github.com/rogerlozada/bonification/blob/master/dotztn4tn-api-default-specification.yaml
-      title: API Spec
-      icon: code
 spec:
   type: openapi
   lifecycle: experimental
   owner: tn4tn-team
-  definition: |
-    openapi: "3.0.0"
-    info:
-      version: 1.0.0
-      title: Swagger Petstore 25
-      license:
-        name: MIT
-    servers:
-      - url: https://dev.dotznext.com/dotz-tn4tn/api/default/index.html
