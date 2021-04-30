@@ -25,4 +25,4 @@ spec:
       license:
         name: MIT
     servers:
-      - url: https://dev.dotznext.com/dotz-tn4tn/api/default/
+      - url: https://dev.dotznext.com/dotz-tn4tn/api/default/index.html
