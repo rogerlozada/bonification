@@ -10,7 +10,7 @@ metadata:
     - url: https://dotzmkt.visualstudio.com/Dotz/_git/dotz-tn4tn
       title: Azure Git Repo
       icon: github
-    - url: https://github.com/OAI/OpenAPI-Specification/blob/master/examples/v3.0/petstore.yaml
+    - url: https://github.com/rogerlozada/bonification/blob/master/dotztn4tn-api-default-specification.yaml
       title: API Spec
       icon: code
 spec:
