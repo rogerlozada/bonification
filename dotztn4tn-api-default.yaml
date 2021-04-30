@@ -25,7 +25,7 @@ spec:
       license:
         name: MIT
     servers:
-      - url: http://petstore.swagger.io/v1
+      - url: https://dev.dotznext.com/dotz-tn4tn/api/default/swagger/v1/swagger.json
     paths:
       /pets:
         get:
