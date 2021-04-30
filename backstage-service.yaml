@@ -8,3 +8,8 @@ spec:
   type: service
   owner: tn4tn-team
   lifecycle: production
+   providesApis:
+    - petstore
+    - streetlights
+    - hello-world
+    - DotzTn4tn.API.Default
