@@ -1,10 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: DotzTn4tn.API.Default
+  name: dotz-tn4tn
   description: |
-    Backstage is an open-source developer portal that puts the developer experience first.
+    serviços para testes do time de arquitetura 
 spec:
   type: service
-  owner: CNCF
-  lifecycle: experimental
+  owner: tn4tn-team
+  lifecycle: production
