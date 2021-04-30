@@ -8,4 +8,4 @@ spec:
   lifecycle: production
   owner: team-a
   definition:
-    $text: https://dev.dotznext.com/dotz-tn4tn/api/default/swagger/v1/swagger.json
+    $text: https://github.com/rogerlozada/bonification/blob/master/dotztn4tn-api-default-specification.yaml
