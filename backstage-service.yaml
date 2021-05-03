@@ -2,13 +2,16 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: dotz-tn4tn
-  description: |
-    serviços para testes do time de arquitetura 
+  description: Esse serviço é utilizado pelo time de arquietura para realizar testes
+  links:
+    - url: https://dotzmkt.visualstudio.com/Dotz/_git/bonification
+      title: Azure Repo
+      icon: github
 spec:
   type: service
-  owner: tn4tn-team
   lifecycle: production
-   providesApis:
+  owner: dotz-tn4tn-team
+  providesApis:
     - petstore
     - streetlights
-    - hello-world
+    - DotzTn4tn.API.Default
