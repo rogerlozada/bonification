@@ -15,6 +15,4 @@ spec:
   lifecycle: production
   owner: dotz-tn4tn-team
   providesApis:
-    - petstore
-    - streetlights
     - DotzTn4tn.API.Default
