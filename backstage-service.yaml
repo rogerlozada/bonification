@@ -3,7 +3,7 @@ kind: Component
 metadata:
   annotations:
     backstage.io/techdocs-ref: url:https://github.com/rogerlozada/bonification
-    jenkins.io/github-folder: dotz-tn4tn/DotzTn4tn.API.Default-express
+    jenkins.io/github-folder: dotz-tn4tn/DotzTn4tn.API.Default
   name: dotz-tn4tn
   description: Esse serviço é utilizado pelo time de arquietura para realizar testes
   links:
