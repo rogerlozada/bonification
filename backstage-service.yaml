@@ -4,6 +4,7 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: url:https://github.com/rogerlozada/bonification
     jenkins.io/github-folder: dotz-tn4tn
+    sonarqube.org/project-key: CouponDotz.API.Private
   name: dotz-tn4tn
   description: Esse serviço é utilizado pelo time de arquietura para realizar testes
   links:
