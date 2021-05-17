@@ -1,6 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
+  annotations:
+    sonarqube.org/project-key: CouponDotz.API.Private
   name: DotzTn4tn.API.Default
   description: API desenvolvida para ser utilizada para testes de arquitetura
 spec:
